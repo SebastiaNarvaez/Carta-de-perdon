@@ -15,7 +15,11 @@ $(document).ready(function () {
   
     function open() {
       envelope.addClass("open").removeClass("close");
+    
+      var audio = document.getElementById("miAudio");
+      audio.play();
     }
+    
     function close() {
       envelope.addClass("close").removeClass("open");
     }
